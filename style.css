@@ -11,7 +11,7 @@
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: #888; 
+    background: #888;
 }
 
 /* Handle on hover */
@@ -138,17 +138,6 @@ a {
 
 }
 
-.arrow {
-    position: absolute;
-    right: 0;
-    color: #888;
-    margin: 10% 50px;
-    font-size: 60px;
-}
-
-.arrow:hover {
-    font-size: 65px;
-}
 
 .card {
     margin: 20px 30px;
