@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(31, 30, 30);
+    color: #e3e3e3;
+    font-family: 'Roboto';
+    font-size: 22px;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    background-color: rgb(37, 37, 37);
+    height: 50px;
+    position: fixed;
+    width: 100%;
+}
+
+#header, a {
+    padding: 5px 8px;
+    font-size: 18px;
+    color: #e3e3e3;
+    margin: 16px 8px 5px;
+    text-decoration: none;
+}
+
+#header > a:hover {
+    border: 1px solid #72e9bb;
+    border-radius: 16px;
+}
+
+
+.main {
+    display: flex;
+}
+
+.main > h1 {
+    font-size: 52px;
+    margin: 10% 8%;
+    max-width: 700px;
+}
+
+.main > h1:hover {
+    color: #72e9bb;
+}
+
+.img-home > img {
+    margin: 20px 0;
+    max-width: 500px;
+    max-height: 500px;
+}
+
+.portfolio > h1 {
+    text-align: center;
+    margin-top: 310px;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.card {
+    margin: 20px 30px;
+    height: 400px;
+    width: 300px;
+}
+
+.card > img {
+    max-width: 500px;
+    max-height: 400px;
+}
+
+.card2 {
+    margin: 20px 30px;
+    height: 400px;
+    width: 300px;
+}
+
+.about > h1 {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.photo > img {
+    background-color: #e3e3e3;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 20px auto;
+}
+
+.content-footer {
+    background-color: rgb(37, 37, 37);
+    width: 100%;
+    height: 50px;
+    color: white;
+    text-align: center;
+}
+
+.content-footer {
+    margin: auto;
+}
+.content-footer > p {
+    text-align: center;
+    font-size: 14px;
+}
+
