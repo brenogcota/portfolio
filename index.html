@@ -9,22 +9,37 @@
 <body>
     <header>
         <div  id="header">
-            <a href="#">Portifólio</a>
-            <a href="#">Contatos</a>
+            <button onclick="scrollWin(0, 650)">Portifólio</button>
+            <button onclick="scrollWin(0, 1500)">Contatos</button>
         </div>
         
     </header>
     
     <div id="container">
         <div class="main">
-            <h1>
+            <h1 id="result">
                 Encontre a melhor solução para o seu projeto.
-            </h1>
+            </h1> 
+            
 
             <div class="img-home">
                 <img src="./imagens/home.png" alt="">
             </div>
             
+        </div>
+
+        <div class="buttons">
+            <div class="button">
+                <a href="#">Sites</a>
+            </div>
+
+            <div class="button">
+                <a href="#">Aplicativos</a>
+            </div>
+
+            <div class="button">
+                <a href="#">Design</a>
+            </div>
         </div>
 
         <div class="portfolio">
@@ -58,10 +73,20 @@
                         <img src="./imagens/alan.jpg" alt="">
                     </div>
 
-                    <div >
+                    <div class="legend">
                             <strong> Alan</strong>
                             <p>Desenvolvedor PHP HTML CSS Javascript | Graduado em Sistema da informação</p>
                             
+                    </div>
+
+                    <div class="social">
+
+                        <a href="">
+                            <img src="./imagens/linkedin.png" alt="">
+                        </a>
+                        <a href="">
+                            <img src="./imagens/github-mark.png" alt="">
+                        </a>
                     </div>
 
                 </div>
@@ -71,23 +96,43 @@
                         <img src="./imagens/alane.jpg" alt="">
                     </div>
 
-                    <div>
+                    <div class="legend">
                             <strong> Alan Eduardo</strong>
-                            <p>Desenvolvedor Flutter | Graduado em Sistema da informação</p>
+                            <p>Desenvolvedor Flutter | Graduado em Engenharia Hídrica</p>
                             
+                    </div>
+
+                    <div class="social">
+
+                        <a href="">
+                            <img src="./imagens/linkedin.png" alt="">
+                        </a>
+                        <a href="">
+                            <img src="./imagens/github-mark.png" alt="">
+                        </a>
                     </div>
 
                 </div>
 
                 <div class="card2">
                     <div class="photo">
-                        <img src="./imagens/pp.jpg" alt="">
+                        <img src="./imagens/breno.jpg" alt="">
                     </div>
 
-                    <div>
+                    <div class="legend">
                             <strong> Breno</strong>
-                            <p>Desenvolvedor PHP HTML CSS Javascript | Graduado em Sistema da informação</p>
+                            <p>Desenvolvedor NodeJS, Javascript | Graduando em Análise e desenvolvimento de sistemas</p>
                             
+                    </div>
+
+                    <div class="social">
+
+                        <a href="https://www.linkedin.com/in/breno-cota-a51711177/" target="blank">
+                            <img src="./imagens/linkedin.png" alt="">
+                        </a>
+                        <a href="https://github.com/brenogcota" target="blank">
+                            <img src="./imagens/github-mark.png" alt="">
+                        </a>
                     </div>
 
                 </div>
@@ -95,6 +140,12 @@
                
             </div>
         </div>
+    </div>
+
+    <div class="fab">
+        <a href="https://api.whatsapp.com/send?phone=5533999078935&text=Olá" target="blank">
+            <img src="./imagens/WhatsApp-icone.png" alt="">
+        </a>
     </div>
 
     <footer>
@@ -105,4 +156,33 @@
         </div>
     </footer>
 </body>
+
+<script>
+
+var texto = "Vamos começar?";
+var result;
+
+var count = 0;
+function digitar() {
+  result = document.getElementById("result");
+  window.setTimeout(function() { inserir(texto[count]) }, 200);
+}
+
+function inserir(letra) {
+  result.innerHTML += letra;
+  count++;
+  if(count < texto.length)
+    window.setTimeout(function() { inserir(texto[count]) }, 100);
+}
+
+window.onload = digitar;
+
+
+//-----------------
+
+function scrollWin(x, y) {
+  window.scrollBy(x, y);
+}
+
+</script>
 </html>
