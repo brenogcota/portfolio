@@ -9,8 +9,8 @@
 <body>
     <header>
         <div  id="header">
-            <button onclick="scrollWin(0, 650)">Portifólio</button>
-            <button onclick="scrollWin(0, 1500)">Contato</button>
+            <button onclick="scrollWin(0, 680)">Portifólio</button>
+            <button onclick="scrollWin(0, 1300)">Contato</button>
         </div>
         
     </header>
@@ -59,6 +59,37 @@
                 <div class="card">
                     <img src="./imagens/Netflix.PNG" alt="">
                 </div>
+
+                <!--Temporario-->
+                <div class="card">
+                    <img src="./imagens/airbnb.PNG" alt="">
+                </div>
+
+                <div class="card">
+                    <img src="./imagens/BBbank.PNG" alt="">
+                </div>
+
+                <div class="card">
+                    <img src="./imagens/Netflix.PNG" alt="">
+                </div>
+
+                <div class="card">
+                    <img src="./imagens/airbnb.PNG" alt="">
+                </div>
+
+                <div class="card">
+                    <img src="./imagens/BBbank.PNG" alt="">
+                </div>
+
+                <div class="card">
+                    <img src="./imagens/Netflix.PNG" alt="">
+                </div>
+
+                <!--Fim-->
+
+                <button onclick="scrollHorizontal(100, 0)" class="arrow">
+                    <p> > </p>
+                </button>
             </div>
         </div>
 
@@ -67,14 +98,14 @@
                 Quem somos
             </h1>
 
-            <div class="cards">
+            <div class="cards2">
                 <div class="card2">
                     <div class="photo">
                         <img src="./imagens/alan.jpg" alt="">
                     </div>
 
                     <div class="legend">
-                            <strong> Alan</strong>
+                            <strong> Alan Gonçalves</strong>
                             <p>Desenvolvedor PHP HTML CSS Javascript | Graduado em Sistema da informação</p>
                             
                     </div>
@@ -120,7 +151,7 @@
                     </div>
 
                     <div class="legend">
-                            <strong> Breno</strong>
+                            <strong> Breno Cota</strong>
                             <p>Desenvolvedor NodeJS, Javascript | Graduando em Análise e desenvolvimento de sistemas</p>
                             
                     </div>
@@ -162,6 +193,8 @@
 var texto = "Vamos começar?";
 var result;
 
+
+
 var count = 0;
 function digitar() {
   result = document.getElementById("result");
@@ -181,8 +214,22 @@ window.onload = digitar;
 //-----------------
 
 function scrollWin(x, y) {
-  window.scrollBy(x, y);
+  var position = window.scrollY;
+  var yY = y - position;
+
+ 
+  window.scrollBy(x, yY);
+  
+
 }
+
+function scrollHorizontal(x, y) {
+
+  scrollX = document.getElementsByClassName("cards")
+  scrollX.scrollBy(x, y);
+  
+}
+
 
 </script>
 </html>

@@ -1,3 +1,24 @@
+/* width */
+::-webkit-scrollbar {
+    width: 20px;
+    height: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: rgb(31, 30, 30); 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -8,6 +29,10 @@ body {
     color: #e3e3e3;
     font-family: 'Roboto';
     font-size: 22px;
+
+    max-width: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 header {
@@ -101,6 +126,28 @@ a {
     justify-content: space-between;
     text-align: center;
     margin-top: 20px;
+
+    overflow-x: scroll;
+}
+
+.cards2 {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 20px;
+
+}
+
+.arrow {
+    position: absolute;
+    right: 0;
+    color: #888;
+    margin: 10% 50px;
+    font-size: 60px;
+}
+
+.arrow:hover {
+    font-size: 65px;
 }
 
 .card {
@@ -160,11 +207,13 @@ a {
 }
 
 .content-footer {
-    margin: auto;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    flex-direction: column;
 }
 .content-footer > p {
     color: #666;
-    text-align: center;
     font-size: 14px;
 }
 
@@ -187,3 +236,47 @@ a {
     max-width: 50px;
 }
 
+
+
+@media (max-width: 750px) {
+
+    
+    .main {
+        display: flex;
+    }
+    
+    .main > h1 {
+        font-size: 34px;
+        margin: 15% 8%;
+        min-width: 300px;
+    }
+    
+    .img-home > img {
+        margin: 20px -30%;
+        max-width: 300px;
+        max-height: 300px;
+    }
+
+    .buttons {
+        margin: 0 8%;
+        max-width: 350px;
+        
+        margin-top: -50px !important;
+    }
+   
+    .cards {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .cards2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    
+
+}
