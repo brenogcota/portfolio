@@ -238,13 +238,10 @@ a {
 @media (max-width: 750px) {
 
     
-    body {
-        overflow-x: hidden;
-
-    }
+    
 
     #container {
-        max-width: 100%;
+        min-width: 100%;
     }
 
     #header > button {
@@ -253,32 +250,29 @@ a {
     
     .main {
         display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     
     .main > h1 {
-        font-size: 6vh;
+        font-size: 8vh;
         margin: 15% 8%;
         min-width: 300px;
     }
     
     .img-home > img {
-        margin: 20px -30%;
-        max-width: 400px;
-        max-height: 400px;
+       display: none;
     }
 
     .buttons {
-        max-width: 30%;
+        display: flex;
+        justify-content: space-between;
+        max-width: 100%;
         
         margin-top: -10px !important;
     }
     .button {
-        padding: 0.4vh 1vh;
-        margin: 0 1vh;
-        width: auto;
-        height: 32px;
-        background-color: #ff8800;
-        border-radius: 6px;
+        padding: 1.8vh 1.8vh;  
     }
     
    
