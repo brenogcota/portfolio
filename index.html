@@ -33,15 +33,15 @@
 
         <div class="buttons">
             <div class="button">
-                <a href="#">Sites</a>
+                <a id="btn1" href="#">Sites</a>
             </div>
 
             <div class="button">
-                <a href="#">Aplicativos</a>
+                <a id="btn2" href="#">Aplicativos</a>
             </div>
 
             <div class="button">
-                <a href="#">Design</a>
+                <a id="btn3" href="#">Design</a>
             </div>
         </div>
 
@@ -167,22 +167,22 @@
 var texto = "Vamos começar?";
 var result;
 
-
-
 var count = 0;
 function digitar() {
   result = document.getElementById("result");
+
   window.setTimeout(function() { inserir(texto[count]) }, 200);
   window.setTimeout(function() {
     result.style.color='#72e9bb'
-  }, 1600)
+  }, 2200)
+
 }
 
 function inserir(letra) {
   result.innerHTML += letra;
   count++;
   if(count < texto.length)
-    window.setTimeout(function() { inserir(texto[count]) }, 100);
+    window.setTimeout(function() { inserir(texto[count]) }, 150);
 }
 
 window.onload = digitar;

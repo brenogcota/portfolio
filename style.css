@@ -192,7 +192,7 @@ a {
     margin: 20px -5px;
     max-width: 30px;
     max-height: 30px;
-    border-radius: 50%;
+    border-radius: 6px;
 }
 
 .content-footer {
@@ -235,10 +235,8 @@ a {
 
 
 
-@media (max-width: 750px) {
 
-    
-    
+@media (max-width: 900px) {
 
     #container {
         min-width: 100%;
@@ -333,10 +331,10 @@ a {
     }
 
     .social > a > img {
-        margin: 20px -5px;
+        margin: 20px -2px;
         min-width: 8vh;
         min-height: 8vh;
-        border-radius: 50%;
+        
     }
 
     .content-footer {
