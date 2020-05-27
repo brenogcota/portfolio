@@ -236,7 +236,7 @@ a {
 
 
 
-@media (max-width: 900px) {
+@media screen and (min-width: 480px) {
     
     .main {
         display: flex;
