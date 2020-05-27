@@ -38,17 +38,17 @@ header {
     display: flex;
     justify-content: flex-end;
     background-color: rgb(37, 37, 37);
-    height: 50px;
+    height: 8vh;
     position: fixed;
     width: 100%;
 }
 
 
 a {
-    padding: 5px 8px;
-    font-size: 18px;
+    padding: 0.5vh 0.8vh;
+    font-size: 3vh;
     color: #e3e3e3;
-    margin: 5px 8px 5px;
+    margin: 0.5px 0.8px 0.5px;
     text-decoration: none;
 }
 
@@ -58,10 +58,10 @@ a {
 
 /* Botões do header da aplicação*/
 #header > button {
-    padding: 5px 8px;
-    font-size: 18px;
+    padding:  0.5vh 0.8vh;
+    font-size: 3vh;
     color: #e3e3e3;
-    margin: 5px 8px 5px;
+    margin: 0.5vh 0.8vh 0.5vh;
     text-decoration: none;
 
     background: none;
@@ -71,7 +71,7 @@ a {
 }
 
 #header > button:hover {
-    border: 1px solid #72e9bb;
+    border: 0.3vh solid #72e9bb;
     border-radius: 16px;
 }
 
@@ -81,10 +81,10 @@ a {
 }
 
 .main > h1 {
-    font-size: 52px;
-    margin: 10% 8%;
-    max-width: 700px;
-    max-height: 200px;
+    font-size: 8vh;
+    margin: 15vh 15vh;
+    max-width: 100vh;
+    max-height: 100vh;
 }
 
 .main > h1:hover {
@@ -103,19 +103,19 @@ a {
 }
 
 .buttons {
-    margin: 0 8%;
+    margin: 0 15vh;
     display: flex;
-    justify-content: space-between;
-    max-width: 350px;
+    max-width: 100%;
     
     margin-top: -150px !important;
 }
 .button {
-    padding: 5px 8px;
+    padding: 1.5vh 1.8vh;  
     width: auto;
     height: 32px;
     background-color: #ff8800;
     border-radius: 6px;
+    margin: 0 2vh;
 }
 
 .button:hover {
@@ -124,7 +124,7 @@ a {
 
 .portfolio > h1 {
     text-align: center;
-    margin-top: 310px;
+    margin-top: 20vh;
 }
 
 /* Cards do portfolio*/
@@ -132,7 +132,6 @@ a {
     display: flex;
     justify-content: space-between;
     text-align: center;
-    margin-top: 20px;
 
     overflow-x: scroll;
 }
@@ -148,9 +147,9 @@ a {
 
 
 .card {
-    margin: 20px 30px;
-    height: 400px;
-    width: 300px;
+    margin: 5vh 8vh;
+    height: 70vh;
+    width: 70vh;
 }
 
 .card > img {
@@ -159,39 +158,42 @@ a {
 }
 
 .card2 {
-    margin: 20px 30px;
-    height: 400px;
-    width: 300px;
+    margin: 5vh 8vh;
+    height: 70vh;
+    width: 70vh;
 }
 
 .about > h1 {
     text-align: center;
-    margin-top: 100px;
+    margin-top: 30vh;
 }
 
 .photo > img {
     background-color: #e3e3e3;
-    width: 100px;
-    height: 100px;
+    width: 15vh;
+    height: 15vh;
     border-radius: 50%;
-    border: 0.8px solid #72e9bb;
+    border: 0.2vh solid #72e9bb;
     margin: 20px auto;
 }
 
 .legend > p {
-    margin: 10px 0;
+    margin: 0.8vh 0;
+    font-size: 4vh;
 }
 
 .social {
     display: flex;
-    max-width: 100px;
+    max-width: 100%;
     margin: auto;
+    align-items: center;
+    justify-content: center;
 }
 
 .social > a > img {
-    margin: 20px -5px;
-    max-width: 30px;
-    max-height: 30px;
+    margin: 20px 0.1vh;
+    max-width: 5vh;
+    max-height: 5vh;
     border-radius: 6px;
 }
 
@@ -211,51 +213,35 @@ a {
 }
 .content-footer > p {
     color: #666;
-    font-size: 14px;
+    font-size: 2.7vh;
 }
 
 
 /* Fab do Whatsapp*/
 .fab {
-    height: 50px;
-    width: 50px;
     border-radius: 50%;
     text-align: center;
     position: fixed;
     right: 0;
     bottom: 0;
-    margin: 0 40px 20px;
+    margin: 0 4.5vh 1.8vh;
 }
 
  .fab > a > img {
-    margin: 0 -5px 15px;
-    max-height: 50px;
-    max-width: 50px;
+    margin: 0 -5vh;
+    max-height: 10vh;
+    max-width: 10vh;
 }
 
 
 
 
 @media (max-width: 900px) {
-
-    #container {
-        min-width: 100%;
-    }
-
-    #header > button {
-        font-size: 4vh;
-    }
     
     .main {
         display: flex;
         flex-direction: column;
         align-items: center;
-    }
-    
-    .main > h1 {
-        font-size: 8vh;
-        margin: 15% 8%;
-        min-width: 300px;
     }
     
     .img-home > img {
@@ -268,12 +254,8 @@ a {
         max-width: 100%;
         
         margin-top: -10px !important;
-    }
-    .button {
-        padding: 1.8vh 1.8vh;  
-    }
+    }  
     
-   
     .cards {
         display: flex;
         align-items: center;
@@ -285,65 +267,5 @@ a {
     .cards2 {
         flex-direction: column;
         align-items: center;
-     
     }
-
-
-    .card {
-        height: 100%;
-        width: 100%;
-    }
-    
-    .card > img {
-        min-width: 50vh;
-        min-height: 100vh;
-    }
-    
-    .card2 {
-        height: 80vh;
-        width: 60vh;
-    }
-    
-   
-    .fab {
-        height: 50px;
-        width: 50px;
-        
-    }
-    
-     .fab > a > img {
-        min-height: 10vh;
-        min-width: 10vh;
-    }
-
-    
-    .photo > img {
-        width: 20vh;
-        height: 20vh;
-    }
-
-
-
-    .social {
-        display: flex;
-        max-width: 100px;
-        margin: auto;
-    }
-
-    .social > a > img {
-        margin: 20px -2px;
-        min-width: 8vh;
-        min-height: 8vh;
-        
-    }
-
-    .content-footer {
-        height: 60px;
-    }
-
-    .content-footer > p {
-        color: #666;
-        font-size: 3vh;
-    }
-
 }
