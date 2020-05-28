@@ -24,11 +24,15 @@
     padding: 0;
 }
 
+html {
+    font-size: 42.0%;
+}
+
 body {
     background-color: rgb(31, 30, 30);
     color: #e3e3e3;
     font-family: 'Roboto';
-    font-size: 22px;
+    font-size: 2.2rem;
 
     max-width: 100%;
     overflow-y: scroll;
@@ -46,7 +50,7 @@ header {
 
 a {
     padding: 0.5vh 0.8vh;
-    font-size: 3vh;
+    font-size: 3.6rem;
     color: #e3e3e3;
     margin: 0.5px 0.8px 0.5px;
     text-decoration: none;
@@ -59,7 +63,7 @@ a {
 /* Botões do header da aplicação*/
 #header > button {
     padding:  0.5vh 0.8vh;
-    font-size: 3vh;
+    font-size: 3.6rem;
     color: #e3e3e3;
     margin: 0.5vh 0.8vh 0.5vh;
     text-decoration: none;
@@ -81,10 +85,10 @@ a {
 }
 
 .main > h1 {
-    font-size: 8vh;
+    font-size: 7.6rem;
     margin: 15vh 15vh;
-    max-width: 100vh;
-    max-height: 100vh;
+    
+    width: 90%;
 }
 
 .main > h1:hover {
@@ -103,9 +107,8 @@ a {
 }
 
 .buttons {
-    margin: 0 15vh;
+    margin: 0 5.9vw;
     display: flex;
-    max-width: 100%;
     
     margin-top: -150px !important;
 }
@@ -115,7 +118,7 @@ a {
     height: 32px;
     background-color: #ff8800;
     border-radius: 6px;
-    margin: 0 2vh;
+    margin: 0 2.2vw;
 }
 
 .button:hover {
@@ -125,6 +128,7 @@ a {
 .portfolio > h1 {
     text-align: center;
     margin-top: 20vh;
+    font-size: 5.9rem;
 }
 
 /* Cards do portfolio*/
@@ -148,8 +152,6 @@ a {
 
 .card {
     margin: 5vh 8vh;
-    height: 70vh;
-    width: 70vh;
 }
 
 .card > img {
@@ -159,19 +161,18 @@ a {
 
 .card2 {
     margin: 5vh 8vh;
-    height: 70vh;
-    width: 70vh;
 }
 
 .about > h1 {
     text-align: center;
     margin-top: 30vh;
+    font-size: 5.9rem;
 }
 
 .photo > img {
     background-color: #e3e3e3;
-    width: 15vh;
-    height: 15vh;
+    width: 14.6rem;
+    height: 14.6rem;
     border-radius: 50%;
     border: 0.2vh solid #72e9bb;
     margin: 20px auto;
@@ -179,7 +180,11 @@ a {
 
 .legend > p {
     margin: 0.8vh 0;
-    font-size: 4vh;
+    font-size: 3.4rem;
+}
+
+.legend > strong {
+    font-size: 3.8rem;
 }
 
 .social {
@@ -191,18 +196,10 @@ a {
 }
 
 .social > a > img {
-    margin: 20px 0.1vh;
-    max-width: 5vh;
-    max-height: 5vh;
+    margin: 20px 0.6rem;
+    max-width: 5.2rem;
+    max-height: 5.2rem;
     border-radius: 6px;
-}
-
-.content-footer {
-    background-color: rgb(37, 37, 37);
-    width: 100%;
-    height: 50px;
-    color: white;
-    text-align: center;
 }
 
 .content-footer {
@@ -210,10 +207,18 @@ a {
     align-items: center; 
     justify-content: center;
     flex-direction: column;
+
+    background-color: rgb(37, 37, 37);
+    width: 100%;
+    height: 10rem;
+    color: white;
+    text-align: center;
 }
+
+
 .content-footer > p {
     color: #666;
-    font-size: 2.7vh;
+    font-size: 2.2rem;
 }
 
 
@@ -222,15 +227,15 @@ a {
     border-radius: 50%;
     text-align: center;
     position: fixed;
-    right: 0;
+    right: 2.6%;
     bottom: 0;
     margin: 0 4.5vh 1.8vh;
 }
 
  .fab > a > img {
     margin: 0 -5vh;
-    max-height: 10vh;
-    max-width: 10vh;
+    max-height: 9vh;
+    max-width: 9vh;
 }
 
 
@@ -238,10 +243,19 @@ a {
 
 @media (max-width: 900px) {
     
+    header {
+        justify-content: center;
+    }
+
     .main {
         display: flex;
         flex-direction: column;
         align-items: center;
+        
+    }
+
+    .main h1 {
+        font-size: 4.6rem;
     }
     
     .img-home > img {
@@ -251,10 +265,18 @@ a {
     .buttons {
         display: flex;
         justify-content: space-between;
-        max-width: 100%;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 10%;
         
         margin-top: -200px !important;
     }  
+
+    .button {
+        margin: 0.9vh 0;
+        width: 100%;
+        text-align: center;
+    }
     
     .cards {
         display: flex;
@@ -269,3 +291,5 @@ a {
         align-items: center;
     }
 }
+
+
