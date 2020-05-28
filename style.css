@@ -75,25 +75,25 @@ a {
 }
 
 #header > button:hover {
-    border: 0.3vh solid #72e9bb;
+    border: 0.3vh solid #1fb4b9;
     border-radius: 16px;
 }
+
 
 /* div com texto principal imagem e botões da aplicação*/
 .main {
     display: flex;
+    background-image: url('./imagens/background-image.png');
+    background-repeat: no-repeat;
 }
 
 .main > h1 {
     font-size: 7.6rem;
-    margin: 15vh 15vh;
+    margin: 15vh 12vh;
     
     width: 90%;
 }
 
-.main > h1:hover {
-    color: #72e9bb;
-}
 
 
 .img-home {
@@ -110,19 +110,19 @@ a {
     margin: 0 5.9vw;
     display: flex;
     
-    margin-top: -150px !important;
+    margin-top: -50px !important;
 }
 .button {
     padding: 1.5vh 1.8vh;  
     width: auto;
     height: 32px;
-    background-color: #ff8800;
+    background-color: #1fb4b9;
     border-radius: 6px;
     margin: 0 2.2vw;
 }
 
 .button:hover {
-    background-color: #ffa600;
+    background-color: #1fb4b9be;
 }
 
 .portfolio > h1 {
@@ -174,7 +174,7 @@ a {
     width: 14.6rem;
     height: 14.6rem;
     border-radius: 50%;
-    border: 0.2vh solid #72e9bb;
+    border: 0.2vh solid #1fb4b9;
     margin: 20px auto;
 }
 
@@ -252,10 +252,13 @@ a {
         flex-direction: column;
         align-items: center;
         
+        background-image: none;
     }
 
+
     .main h1 {
-        font-size: 4.6rem;
+        font-size: 6.7rem;
+        text-align: center;
     }
     
     .img-home > img {
