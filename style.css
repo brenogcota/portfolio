@@ -131,11 +131,16 @@ a {
     font-size: 5.9rem;
 }
 
+.portfolio h2 {
+    margin: 8vh 4vw 0;
+}
+
 /* Cards do portfolio*/
 .cards {
     display: flex;
     justify-content: space-between;
     text-align: center;
+    align-items: center;
 
     overflow-x: scroll;
 }
