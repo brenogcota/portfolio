@@ -1,0 +1,24 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "![Capturar](https://user-images.githubusercontent.com/46490801/83187234-3affb880-a104-11ea-9951-6c736724767e.PNG)",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brenogcota/portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brenogcota/portfolio/issues"
+  },
+  "homepage": "https://github.com/brenogcota/portfolio#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
